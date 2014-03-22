@@ -1,4 +1,10 @@
+// Bootstrap typography
+$font-family-sans-serif: "Geometria", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 13px;
+$headings-font-weight: 300;
+
 @import "bootstrap";
+@import "fonts/geometria";
 
 /* mixins, variables, etc. */
 
