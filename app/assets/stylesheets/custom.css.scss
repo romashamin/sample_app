@@ -8,6 +8,14 @@ $font-black:    800;  // Geometria Heavy
 @import "fonts/geometria";
 
 
+// Bootstrap scaffolding
+$brand-primary:       #fa4711;  // OMS Red
+$body-bg:             #222;
+$text-color:          #fff;
+$input-color:         $text-color;
+$input-bg:            transparent;
+$input-border-focus:  $brand-primary;
+
 // Bootstrap components
 $border-radius-base:  2px;
 $border-radius-large: $border-radius-base;
@@ -15,8 +23,10 @@ $border-radius-small: $border-radius-base;
 
 // Bootstrap typography
 $font-family-sans-serif: "Geometria", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size-base: 15px;
-$headings-font-weight: $font-light;
+$font-size-base:  15px;
+$font-size-h1:    56px;
+$headings-font-weight:  $font-light;
+$btn-font-weight:       $font-black;
 
 @import "bootstrap";
 
@@ -62,8 +72,23 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: #fff;
+  font-feature-settings: "liga", "dlig";
 }
 
+.image-bg {
+  position: fixed;
+  right:  0;
+  bottom: 0;
+  min-width:  100%;
+  min-height: 100%;
+  width:  auto;
+  height: auto;
+  z-index: -100;
+  background: url('bg.jpg') no-repeat;
+  background-size: cover;
+  //opacity: .9;
+}
 
 
 /* forms */
